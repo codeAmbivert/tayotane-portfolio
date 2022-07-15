@@ -1,0 +1,86 @@
+/* This css page contains tags that are solely for about.css which aren't already on index.css */
+
+@keyframes left-to-right-marquee{
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes right-to-left-marquee{
+    100%{
+        transform: translateX(170vw);
+    }
+    0%{
+        transform: translateX(-170vw);
+    }
+}
+
+.marquee{
+    padding: 44px;
+    overflow: visible;
+    position: relative;
+    white-space: nowrap;
+}
+.marquee h1{
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    position: absolute;
+    display: inline-block;
+    /* padding-left: 100%; */
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+#left-to-right-marquee{
+    /* transform: translateX(100%); */
+    /* margin-left: 100vw; */
+    animation: left-to-right-marquee 10s linear infinite;
+}
+
+#right-to-left-marquee{
+    /* padding: 0 0 0 -20rem; */
+    /* margin-left: -200vw; */
+    animation: right-to-left-marquee 15s linear infinite;
+}
+
+.unsplash{
+    background: url(./images/unsplash_jbtfM0XBeRc.png);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 20vw;
+    overflow-x: visible;
+    margin-left: -5rem;
+}
+
+.about-me{
+    margin: 4rem 0;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.figma-logo-container{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    /* padding: 2rem; */
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figma-logo-container > img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.about-work-experience{
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
